@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: #212121;
+}
+header img{
+    height: 30px;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 10px;
+}
+header ul{
+    position: absolute;
+    background-color: #212121;
+    top: 50px;
+    display: none;
+}
+#FDd:hover ul{
+    display: block;
+}
+.headerLeft{
+    display: flex;
+}
+.logo{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-image: url("img/logoIcon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
