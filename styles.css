@@ -6,6 +6,17 @@ header{
 }
 header img{
     height: 30px;
+    margin: 5px;
+}
+.headerRight{
+    display: flex;
+}
+.call{
+    display: flex;
+    align-items: center;
+}
+.call img, .logo{
+    filter: invert(100%);
 }
 .container{
     width: 90%;
