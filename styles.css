@@ -1,51 +1,75 @@
-*{
+* {
     margin: 0;
 }
-header{
+
+
+header {
     background-color: #212121;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
-header img{
+
+header img {
     height: 30px;
     margin: 5px;
+    filter: invert(100%);
 }
-.headerRight{
+
+.headerRight {
     display: flex;
 }
-.call{
+
+.call {
     display: flex;
     align-items: center;
 }
-.call img, .logo{
+
+.logo {
     filter: invert(100%);
 }
-.container{
+
+.container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
-header .container{
+
+header .container {
     display: flex;
     justify-content: space-between;
 }
-header a{
+
+header a {
     color: #fff;
     text-decoration: none;
     line-height: 50px;
     padding: 0 10px;
 }
-header ul{
+
+header ul {
     position: absolute;
     background-color: #212121;
     top: 50px;
     display: none;
+    list-style: none;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
 }
-#FDd:hover ul{
+
+header li {
+    padding: 0 10px;
+}
+
+#FDd:hover ul {
     display: block;
 }
-.headerLeft{
+
+.headerLeft {
     display: flex;
 }
-.logo{
+
+.logo {
     display: block;
     height: 40px;
     width: 40px;
@@ -55,7 +79,81 @@ header ul{
     background-position: center;
     margin: 5px 0;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
+}
+
+.sliderCont {
+    margin-top: 50px;
+    overflow: hidden;
+}
+.slider{
+    white-space: nowrap;
+    font-size: 0;
+}
+.slide {
+    display: inline-block;
+}
+.slide h2{
+    font-size: 30px;
+}
+.slide p{
+    font-size: 16px;
+}
+.slide a{
+    font-size: 18px;
+}
+.slide:nth-child(1) {
+    background-image: url(img/flat1.jpg);
+}
+
+.slide:nth-child(2) {
+    background-image: url(img/flat2.jpg);
+}
+
+.slide:nth-child(3) {
+    background-image: url(img/flat3.jpg);
+}
+
+.open {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    margin: auto;
+    color: #fff;
+    top: 25%;
+    left: 25%;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.openCont {
+    display: flex;
+    align-items: center;
+}
+
+.blur {
+    filter: blur(2px);
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.blurCont {
+    transition: all 1s ease;
+}
+
+#openButton {
+    float: right;
+    margin: 10px 10px 0 0;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.openTrans {
+    transition: all 1s ease !important;
+    opacity: 100 !important;
 }
